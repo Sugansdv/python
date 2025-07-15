@@ -1,4 +1,10 @@
-# ATM Machine Simulation
+#1. ATM Machine Simulation
+#Concepts: while, functions, list (transaction history), string (messages).
+#Login with 3 attempts using a while loop.
+#Menu-driven system: balance inquiry, deposit, withdraw.
+#Maintain transaction history in a list.
+#Validate input strings and convert appropriately.
+
 correct_pin = "1234"
 balance = 5000
 transaction_history = [] 
