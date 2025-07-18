@@ -1,0 +1,4 @@
+Title: Python Basics
+
+Welcome to the Python programming world!
+This book introduces variables, loops, and functions.
