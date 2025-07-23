@@ -1,0 +1,15 @@
+2025-07-22 20:16:06 - 41. Application started.
+2025-07-22 20:16:06 - 41. Simple logger initialized.
+2025-07-22 20:16:08 - New file added: mock_file.txt
+2025-07-22 20:16:08 - Step 1: Starting task.
+2025-07-22 20:16:08 - Step 3: Warning encountered.
+2025-07-22 20:16:08 - Step 4: Error occurred.
+2025-07-22 20:16:08 - Step 5: Critical issue.
+2025-07-22 20:17:25 - 41. Application started.
+2025-07-22 20:17:25 - 41. Simple logger initialized.
+2025-07-22 20:17:27 - Step 1: Starting task.
+2025-07-22 20:17:27 - Step 2: Debugging info.
+2025-07-22 20:17:27 - Step 3: Warning encountered.
+2025-07-22 20:17:27 - Step 4: Error occurred.
+2025-07-22 20:17:27 - Step 5: Critical issue.
+2025-07-22 20:17:27 - 45. This log entry will be archived by date.

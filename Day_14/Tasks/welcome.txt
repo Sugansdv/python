@@ -1,0 +1,1 @@
+Welcome to basic file operations in Python!

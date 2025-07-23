@@ -1,0 +1,5 @@
+2025-07-22 20:17:27,489 - INFO - Step 1: Starting task.
+2025-07-22 20:17:27,489 - DEBUG - Step 2: Debugging info.
+2025-07-22 20:17:27,489 - WARNING - Step 3: Warning encountered.
+2025-07-22 20:17:27,489 - ERROR - Step 4: Error occurred.
+2025-07-22 20:17:27,489 - CRITICAL - Step 5: Critical issue.

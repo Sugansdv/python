@@ -1,0 +1,12 @@
+{
+    "Dharun": {
+        "email": "dharun@gmail.com",
+        "phone": "9876543210",
+        "skills": [
+            "html",
+            "css",
+            "python"
+        ],
+        "experience": "0"
+    }
+}
