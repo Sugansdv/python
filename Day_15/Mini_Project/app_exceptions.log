@@ -1,0 +1,11 @@
+2025-07-24 07:57:32,256 - ERROR - Uncaught Exception:
+Traceback (most recent call last):
+  File "D:\python\Day_15\Mini_Project\Exception_Logger.py", line 35, in <module>
+    start_app()
+    ~~~~~~~~~^^
+  File "D:\python\Day_15\Mini_Project\Exception_Logger.py", line 31, in start_app
+    result = divide(a, b)
+  File "D:\python\Day_15\Mini_Project\Exception_Logger.py", line 25, in divide
+    return a / b
+           ~~^~~
+ZeroDivisionError: division by zero

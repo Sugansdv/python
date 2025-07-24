@@ -1,0 +1,6 @@
+ERROR:root:Exception occurred
+Traceback (most recent call last):
+  File "D:\python\Day_15\Task\use_case_tasks.py", line 65, in divide_and_log
+    return a / b
+           ~~^~~
+ZeroDivisionError: division by zero
