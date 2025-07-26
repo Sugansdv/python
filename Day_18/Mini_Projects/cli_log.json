@@ -1,0 +1,22 @@
+[
+    {
+        "function": "cli_tool",
+        "args": [
+            "init"
+        ],
+        "kwargs": {
+            "path": "/user/project",
+            "verbose": true
+        }
+    },
+    {
+        "function": "cli_tool",
+        "args": [
+            "build"
+        ],
+        "kwargs": {
+            "optimize": true,
+            "threads": 4
+        }
+    }
+]
