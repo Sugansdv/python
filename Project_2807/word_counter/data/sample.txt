@@ -1,0 +1,4 @@
+Hello world.
+This is a sample file.
+Hello again!
+Word counting is fun. Hello!

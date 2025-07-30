@@ -1,0 +1,21 @@
+User: hi
+Bot: Hello!
+
+User: v
+Bot: I'm not sure how to respond to that.
+
+User: hi
+Bot: Hello!
+
+User: help
+Bot: I can answer simple questions like 'hi', 'bye', or 'how are you'.
+
+User: 
+Bot: I'm not sure how to respond to that.
+
+User: byr
+Bot: I'm not sure how to respond to that.
+
+User: bye
+Bot: Goodbye!
+

@@ -1,0 +1,10 @@
+python
+developer
+hangman
+project
+interface
+function
+variable
+compile
+network
+exception

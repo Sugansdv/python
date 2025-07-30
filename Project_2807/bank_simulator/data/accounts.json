@@ -1,0 +1,12 @@
+{
+  "alice": {
+    "balance": 800.0,
+    "transactions": [
+      {
+        "action": "deposit",
+        "amount": 1000.0,
+        "timestamp": "2025-07-29 21:34:32.503946"
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "start": {
+    "description": "You are in a dark forest. A path lies ahead.",
+    "choices": [
+      ["Take the path", "path"],
+      ["Stay put", "stay"]
+    ]
+  },
+  "path": {
+    "description": "You walk down the path and encounter a wolf!",
+    "choices": [
+      ["Fight", "fight"],
+      ["Run", "start"]
+    ]
+  },
+  "fight": {
+    "description": "You fight the wolf and win! You find loot.",
+    "choices": [
+      ["Take loot and continue", "end"]
+    ]
+  },
+  "stay": {
+    "description": "You wait. Nothing happens. You get bored.",
+    "choices": [
+      ["Take the path anyway", "path"]
+    ]
+  },
+  "end": {
+    "description": "You have completed the adventure. Congratulations!",
+    "choices": []
+  }
+}
