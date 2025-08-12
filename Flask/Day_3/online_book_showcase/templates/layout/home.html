@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+  <h1>Welcome to the Online Book Showcase</h1>
+  <p>Discover a curated list of amazing books with author info and cover images.</p>
+  <p>Navigate to the <a href="{{ url_for('books') }}">Books</a> page to explore our collection.</p>
+{% endblock %}

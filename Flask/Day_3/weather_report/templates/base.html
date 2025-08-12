@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daily Weather Report</title>
+   <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-papbX97Ek7T8lMdlpV6mNZ2Ko13UEzVsPbqC+Nij+5RBSMk1T9VRCZYY2Qri4mLndLOl2kzEJ8F4FGbb2HuL0A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  {% include 'include/navbar.html' %}
+  <main class="container my-4">
+    {% block content %}{% endblock %}
+  </main>
+  {% include 'include/footer.html' %}
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

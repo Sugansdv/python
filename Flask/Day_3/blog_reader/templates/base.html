@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% block title %}My Flask App{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+<body>
+
+  {% include 'include/navbar.html' %}
+
+  <main class="container my-4">
+    {% block content %}{% endblock %}
+  </main>
+
+  {% include 'include/footer.html' %}
+
+</body>
+</html>

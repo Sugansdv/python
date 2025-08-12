@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Welcome to {{ data.name }}'s Portfolio</h1>
+
+  <img src="{{ url_for('static', filename='images/profile.avif') }}" alt="Profile Picture" width="150" />
+
+  <h2>Skills</h2>
+  <ul>
+    {% for skill in data.skills %}
+      <li>{{ skill }}</li>
+    {% endfor %}
+  </ul>
+
+  {% if data.available_for_hire %}
+    <p style="color: green; font-weight: bold;">Available for hire!</p>
+  {% endif %}
+{% endblock %}

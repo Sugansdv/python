@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Products - MyApp{% endblock %}
+
+{% block content %}
+  <h1>Our Products</h1>
+  <div class="products-grid">
+    {% for product in products %}
+      <div class="product-card">
+        <img src="{{ url_for('static', filename='images/' + product.image) }}" alt="{{ product.name }}" class="product-image" />
+        <h3>{{ product.name }}</h3>
+        <p class="price">${{ "%.2f"|format(product.price) }}</p>
+        {% if product.in_stock %}
+          <button class="buy-now">Buy Now</button>
+        {% else %}
+          <span class="out-of-stock">Out of Stock</span>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

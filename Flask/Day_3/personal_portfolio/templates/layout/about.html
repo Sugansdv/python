@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>About Me</h1>
+  
+  <p>Hello! My name is <strong>{{ data.name }}</strong>. I'm a passionate developer skilled in:</p>
+
+  <ul>
+    {% for skill in data.skills %}
+      <li>{{ skill }}</li>
+    {% endfor %}
+  </ul>
+
+  <p>I love building projects that make life easier and more fun. Check out some of my projects in the Projects section.</p>
+
+  {% if data.available_for_hire %}
+    <p style="color: green; font-weight: bold;">I'm currently available for hire!</p>
+  {% else %}
+    <p>Currently, I'm busy working on exciting things, but feel free to get in touch!</p>
+  {% endif %}
+{% endblock %}

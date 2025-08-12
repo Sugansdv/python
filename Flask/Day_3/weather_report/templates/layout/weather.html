@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Weather for {{ weather.location }}</h2>
+
+  <div class="weather-info my-3">
+    <p>Temperature: {{ weather.temperature }}°C</p>
+
+    {% if weather.condition == 'sunny' %}
+      <i class="fa-solid fa-sun" style="color: orange; font-size: 50px;"></i>
+    {% elif weather.condition == 'rainy' %}
+      <i class="fa-solid fa-cloud-showers-heavy" style="color: #007bff; font-size: 50px;"></i>
+    {% else %}
+      <i class="fa-solid fa-cloud" style="color: gray; font-size: 50px;"></i>
+    {% endif %}
+
+    {% if weather.temperature > 30 %}
+      <p class="hydration-tip">Stay Hydrated!</p>
+    {% endif %}
+  </div>
+
+  <canvas id="tempChart" width="400" height="200"></canvas>
+
+  <script>
+    const tempData = {{ weather.temperatures_last_week | tojson }};
+  </script>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Projects</h1>
+  <ul>
+    {% for project in data.projects %}
+      <li>
+        <strong>{{ project.title }}</strong>: {{ project.description }}
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

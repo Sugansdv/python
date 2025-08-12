@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Result for {{ student.name }}</h2>
+
+<table class="table table-bordered mt-3 w-50">
+    <thead class="table-light">
+        <tr>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for subject, marks in student.subjects.items() %}
+        <tr>
+            <td>{{ subject }}</td>
+            <td>{{ marks }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<h4>
+    Grade: 
+    {% if student.grade == 'A' %}
+        <span class="grade-a">{{ student.grade }}</span>
+    {% elif student.grade == 'B' %}
+        <span class="grade-b">{{ student.grade }}</span>
+    {% else %}
+        <span class="grade-c">{{ student.grade }}</span>
+    {% endif %}
+</h4>
+{% endblock %}

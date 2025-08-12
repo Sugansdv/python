@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Movies - MyApp{% endblock %}
+
+{% block content %}
+  <h1>Recommended Movies</h1>
+  <div class="movies-container">
+    {% for movie in movies %}
+      <div class="movie-card">
+        <img src="{{ movie.poster }}" alt="{{ movie.title }}" class="poster" />
+        <h3>{{ movie.title }}</h3>
+        {% if movie.new_release %}
+          <span class="new-release">New Release</span>
+        {% endif %}
+        <div class="rating">
+          {% for i in range(movie.rating) %}
+            <img src="{{ url_for('static', filename='images/star.png') }}" alt="star" class="star" />
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

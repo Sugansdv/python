@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Jobs - MyApp{% endblock %}
+
+{% block content %}
+  <h1>Job Listings</h1>
+  <div class="jobs-container">
+    {% for job in jobs %}
+      <div class="job-card {% if job.remote %}remote-job{% endif %}">
+        <div class="logo" aria-label="Company Logo" title="{{ job.company }}">
+          <span class="logo-icon">{{ job.logo_icon }}</span>
+        </div>
+        <div class="job-details">
+          <h3>{{ job.title }}</h3>
+          <p><strong>Company:</strong> {{ job.company }}</p>
+          <p><strong>Location:</strong> {{ job.location }}</p>
+          {% if job.remote %}
+            <span class="badge">Remote</span>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

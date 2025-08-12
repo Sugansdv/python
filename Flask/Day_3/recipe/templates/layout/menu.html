@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Menu - MyApp{% endblock %}
+
+{% block content %}
+  <h1>Restaurant Menu</h1>
+
+  {% for category, dishes in menu.items() %}
+    <section class="category-section">
+      <h2>{{ category }}</h2>
+      <div class="dishes-container">
+        {% for dish in dishes %}
+          <div class="dish-card {% if not dish.available %}out-of-stock{% endif %}">
+            <img src="{{ url_for('static', filename='images/' + dish.image) }}" alt="{{ dish.name }}" class="dish-image" />
+            <h3>{{ dish.name }}</h3>
+            <p>Price: ${{ "%.2f"|format(dish.price) }}</p>
+            {% if not dish.available %}
+              <span class="stock-status">Out of Stock</span>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+  {% endfor %}
+
+{% endblock %}
