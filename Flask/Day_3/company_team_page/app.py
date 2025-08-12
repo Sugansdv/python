@@ -12,12 +12,12 @@ def team():
         {
             "name": "Alice Johnson",
             "role": "Team Lead",
-            "photo": "member1.jpg"
+            "photo": "member.png"
         },
         {
             "name": "Bob Smith",
             "role": "Developer",
-            "photo": "member2.jpg"
+           "photo": "member2.webp"
         },
         {
             "name": "Carol Williams",

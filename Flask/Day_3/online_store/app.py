@@ -19,13 +19,13 @@ def products():
             "name": "Smart Watch",
             "price": 199.99,
             "in_stock": False,
-            "image": "product2.jpg"
+            "image": "product1.webp"
         },
         {
             "name": "Bluetooth Speaker",
             "price": 79.99,
             "in_stock": True,
-            "image": "product3.jpg"
+            "image": "product2.webp"
         }
     ]
     return render_template('layout/products.html', products=product_list)
